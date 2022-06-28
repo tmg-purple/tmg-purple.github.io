@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TMG </title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" id="title-font" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,300&amp;display=swap">
+    <link rel="stylesheet" id="body-font" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&amp;display=swap">
+
+    <!-- Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body class="antialiased bg-body bg-body-image bg-body-position bg-body-repeat bg-body-size font-body">
+    <main>
+                    <header class="transition-all duration-200 ease-in-out z-10   fixed w-full backdrop-filter " x-data="header" :class="{'backdrop-blur-lg': !scrollAtTop}"
+	@scroll.window="scrollAtTop = (window.pageYOffset > 0) ? false : true"
+>
+	<div class="max-w-6xl px-4 mx-auto md:px-8">
+		<nav class="flex items-center justify-between py-6">
+			<a href="/">
+							</a>
+
+			<button type="button" class="text-cCC4ELuVTqT8Xg9FU3OM-link focus:outline-none md:hidden" x-on:click="mobileMenuOpen = !mobileMenuOpen">
+				<svg
+					class="w-6 h-6"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					aria-hidden="true"
+					x-show="!mobileMenuOpen"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+				</svg>
+
+				<svg
+					class="w-6 h-6"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+					x-show="mobileMenuOpen"
+					x-cloak
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+			</button>
+
+			<div class="hidden space-x-4 md:flex">
+							</div>
+
+			<div class="items-center hidden space-x-4 text-cCC4ELuVTqT8Xg9FU3OM-link md:flex">
+									<a href="https://themagnategroup.hyper.co/login" class="inline-block bg-primary py-2 px-4 rounded-button text-base font-medium text-primary-button-text transition-colors duration-300 ease-in-out hover:bg-primary-700" >
+            Dashboard
+        </a>
+    
+							</div>
+		</nav>
+	</div>
+
+	<div
+		class="absolute inset-x-0 px-2 top-2 md:hidden"
+		x-show="mobileMenuOpen"
+		x-cloak
+		x-transition:enter="duration-150 ease-out"
+		x-transition:enter-start="opacity-0 scale-95"
+		x-transition:enter-end="opacity-100 scale-100"
+		x-transition:leave="duration-100 ease-in"
+		x-transition:leave-start="opacity-100 scale-100"
+		x-transition:leave-end="opacity-0 scale-95"
+	>
+		<div class="relative p-4 bg-primary rounded-main">
+			<div class="absolute top-4 right-4 cursor-pointer text-cCC4ELuVTqT8Xg9FU3OM-link" @click="mobileMenuOpen = false">
+				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+			</div>
+
+			<a href="/" class="block mb-4">
+							</a>
+
+			<div class="space-y-2">
+							</div>
+			<div class="mt-4 space-y-2 text-cCC4ELuVTqT8Xg9FU3OM-link">
+									<a href="https://themagnategroup.hyper.co/login" class="inline-block bg-primary py-2 px-4 rounded-button text-base font-medium text-primary-button-text transition-colors duration-300 ease-in-out hover:bg-primary-700 w-full text-center bg-white text-primary hover:bg-white hover:bg-opacity-75" >
+            Dashboard
+        </a>
+    
+							</div>
+		</div>
+	</div>
+</header>
+                    <section id="hero-1" class="relative py-20  px-4 md:px-8   pt-36  overflow-hidden">
+        
+        <div class="pointer-events-none absolute z-[-1] inset-0  bg-body  "></div>
+
+                    <div class="max-w-6xl mx-auto">
+                <div class="absolute inset-x-0 bottom-0 z-[-1] h-1/3 bg-gradient-to-t from-body"></div>
+
+<div class="grid items-center max-w-md grid-cols-12 gap-4 mx-auto lg:mt-16 lg:max-w-none lg:gap-12">
+	<div class="col-span-12 text-center lg:col-span-6 lg:text-left">
+					<h3 class="mb-2 font-bold text-primary-400" data-aos="fade-up" data-aos-delay="0">A Better Network</h3>
+				<h1 class="w-full text-5xl font-bold font-title text-header text-yRIpI7TiM9FHOkdFRG3s-header tracking-tight lg:text-7xl lg:max-w-xl" data-aos="fade-up" data-aos-delay="50">
+			<span>The #1 Community For</span><span class="text-primary"> Resellers To Prosper</span>
+		</h1>
+					<div class="max-w-lg mt-4 text-content text-yRIpI7TiM9FHOkdFRG3s-body lg:mt-6" data-aos="fade-up" data-aos-delay="100"><p>Access all the tools you need to achieve the best results selling on digital platforms - &nbsp;we flip all sorts of items from Pools to Nintendo switches to NFTs. If you can name it we have probably flipped it...</p></div>
+		
+					<div class="flex items-center justify-center space-x-4 mt-6 text-yRIpI7TiM9FHOkdFRG3s-link lg:justify-start" data-aos="fade-up" data-aos-delay="150">
+									<a href="https://themagnategroup.hyper.co/" class="inline-block bg-primary py-2 px-4 rounded-button text-base font-medium text-primary-button-text transition-colors duration-300 ease-in-out hover:bg-primary-700 py-4 text-lg px-7" >
+            LEARN MORE
+        </a>
+    
+							</div>
+			</div>
+	<div class="col-span-12 mt-4 lg:col-span-6 lg:mt-0" data-aos="fade-left" data-aos-delay="200">
+		<img src="assets/macbook%20monitors%20pic.png" class="w-full mx-auto drop-shadow-main" />
+	</div>
+</div>            </div>
+            </section>
+
+                    <section id="features-4" class="relative py-20  px-4 md:px-8   overflow-hidden">
+        
+        <div class="pointer-events-none absolute z-[-1] inset-0  bg-body  "></div>
+
+                                                        <div class="max-w-6xl mx-auto">
+                        <div class="relative max-w-5xl text-center mx-auto mb-12">
+     <p class="mb-2 font-medium text-primary text-sm" data-aos="fade-up" data-aos-delay="0">OUR ARMOURY OF TOOLS</p>     <h3 class="text-6xl font-bold font-title text-header text-i1Gr3QnsUNUTlCmqrAuR-header" data-aos="fade-up" data-aos-delay="50">WHAT WE BRING TO THE TABLE</h3>    <div class=" mx-auto  max-w-md mt-6 text-lg text-content text-i1Gr3QnsUNUTlCmqrAuR-body md:max-w-3xl" data-aos="fade-up" data-aos-delay="100"><p>Our comprehensive memberships are suitable for both beginner and advanced resellers looking to scale up and develop a serious business.&nbsp;</p><p>&nbsp;</p><p>At TMG we promise results and deliver them, nothing more needs to be said...</p></div></div>                    </div>
+                
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid items-center max-w-sm mt-12 grid-cols-1 gap-3 mx-auto md:grid-cols-2 md:max-w-none lg:grid-cols-3 lg:gap-8">
+	<div>
+					<div class="flex mb-6" data-aos="fade-right" data-aos-delay="150">
+								<div class="w-8 h-8 mr-4 flex-shrink-0">
+					<img src="https://cookgroup.tools/storage/placeholders/icon.png" />
+				</div>
+				
+				<div>
+					<p class="font-medium font-title text-header text-i1Gr3QnsUNUTlCmqrAuR-header">Weekly Arbitrage Deals</p>
+					<div class="text-sm leading-tight text-content text-i1Gr3QnsUNUTlCmqrAuR-body"><p>Access over 500 weekly leads which help scale your amazon business. With a minimum ROI of 30% with golden tickets profiting members insane amounts...</p></div>
+				</div>
+			</div>
+					<div class="flex mb-6" data-aos="fade-right" data-aos-delay="250">
+								<div class="w-8 h-8 mr-4 flex-shrink-0">
+					<img src="https://cookgroup.tools/storage/placeholders/icon.png" />
+				</div>
+				
+				<div>
+					<p class="font-medium font-title text-header text-i1Gr3QnsUNUTlCmqrAuR-header">High Speed Monitors</p>
+					<div class="text-sm leading-tight text-content text-i1Gr3QnsUNUTlCmqrAuR-body"><p>Dedicated monitors which will ping you on on shock drops, restocks and releases. Never miss a drop a again.</p></div>
+				</div>
+			</div>
+					<div class="flex" data-aos="fade-right" data-aos-delay="350">
+								<div class="w-8 h-8 mr-4 flex-shrink-0">
+					<img src="https://cookgroup.tools/storage/placeholders/icon.png" />
+				</div>
+				
+				<div>
+					<p class="font-medium font-title text-header text-i1Gr3QnsUNUTlCmqrAuR-header">24/7 Support</p>
+					<div class="text-sm leading-tight text-content text-i1Gr3QnsUNUTlCmqrAuR-body"><p>Whether you are a complete beginner or a professional seller, there is always more for you to learn. Our network connects you to a plethora of successful sellers, allowing you to learn from their mistakes.</p></div>
+				</div>
+			</div>
+			</div>
+	<div class="hidden lg:block">
+		<img src="assets/03E1344D-FC9A-41CF-A1DB-92A6D4121BE6_iphone13progold_portrait.png" class="mx-auto drop-shadow-main" data-aos="fade-up" data-aos-delay="150"/>
+	</div>
+	<div>
+					<div class="flex mb-6" data-aos="fade-left" data-aos-delay="150">
+									<div class="w-8 h-8 mr-4 flex-shrink-0">
+						<img src="https://cookgroup.tools/storage/placeholders/icon.png" />
+					</div>
+				
+				<div>
+					<p class="font-medium font-title text-header text-i1Gr3QnsUNUTlCmqrAuR-header">Networking Events</p>
+					<div class="text-sm leading-tight text-content text-i1Gr3QnsUNUTlCmqrAuR-body"><p>Access our Magnate Only events, whether your in the UK or the US, we aim to host one event every 6-12 months allowing us all to collaborate and explore new ventures. Meet professionals within different paths of life - from: real estate to the finance bro's. Enjoy full access to Magnate Properties and complimentary meals and drinks.</p></div>
+				</div>
+			</div>
+					<div class="flex mb-6" data-aos="fade-left" data-aos-delay="250">
+									<div class="w-8 h-8 mr-4 flex-shrink-0">
+						<img src="https://cookgroup.tools/storage/placeholders/icon.png" />
+					</div>
+				
+				<div>
+					<p class="font-medium font-title text-header text-i1Gr3QnsUNUTlCmqrAuR-header">Lowkey Flips</p>
+					<div class="text-sm leading-tight text-content text-i1Gr3QnsUNUTlCmqrAuR-body"><p>Don't feel like you have to put all your eggs in one basket. Our monitors ping lowkey flips and deals getting you up to 90% on every day products. You do not have to chase hyped up items to profit - we have been successful flipping products your average reseller would have walked past.</p></div>
+				</div>
+			</div>
+					<div class="flex" data-aos="fade-left" data-aos-delay="350">
+									<div class="w-8 h-8 mr-4 flex-shrink-0">
+						<img src="https://cookgroup.tools/storage/placeholders/icon.png" />
+					</div>
+				
+				<div>
+					<p class="font-medium font-title text-header text-i1Gr3QnsUNUTlCmqrAuR-header">One to One Mentorship</p>
+					<div class="text-sm leading-tight text-content text-i1Gr3QnsUNUTlCmqrAuR-body"><p>A promise TMG will uphold forever moving forwards. All members will be assigned a professional mentor who specializes in the niche you are pursuing whether it be FBA, eBay, or any other market. We will assign someone who has seen success in the niche to support you on your journey; so you don't make the same mistakes they did.</p></div>
+				</div>
+			</div>
+			</div>
+</div>
+                </div>
+                        </section>
+
+                    <section id="research" class="relative py-20  px-4 md:px-8   overflow-hidden">
+        
+        <div class="pointer-events-none absolute z-[-1] inset-0  bg-NbEmYwi6uJEpubUfUN4C-section-background  "></div>
+
+                                                        <div class="max-w-6xl mx-auto">
+                        <div class="relative max-w-5xl text-center mx-auto mb-12">
+        <h3 class="text-6xl font-bold font-title text-header text-NbEmYwi6uJEpubUfUN4C-header" data-aos="fade-up" data-aos-delay="50">Access Our Research Team</h3>    <div class=" mx-auto  max-w-md mt-6 text-lg text-content text-NbEmYwi6uJEpubUfUN4C-body md:max-w-3xl" data-aos="fade-up" data-aos-delay="100"><p>Leave all the stress of running your online business in our hands.&nbsp;</p><p>&nbsp;</p><p>Our staff will hunt the best arbitrage opportunities for you to flip whilst you sit back and cash out those previous profits.&nbsp;</p><p>&nbsp;</p><p>With new excels sent out weekly, filled with thousands of opportunities to profit from, our members scale faster than ever.</p></div></div>                    </div>
+                
+                <div class="max-w-6xl mx-auto">
+                    <div class="max-w-3xl mx-auto">
+    <div class="flex flex-wrap justify-center gap-4 max-w-sm mx-auto mt-12 md:max-w-none lg:gap-6">
+            </div>
+</div>
+                </div>
+                        </section>
+
+                    <section id="testimonials-1" class="relative py-20  px-4 md:px-8   overflow-hidden">
+        
+        <div class="pointer-events-none absolute z-[-1] inset-0  bg-body  "></div>
+
+                    <div class="max-w-6xl mx-auto">
+                <div class="flex flex-wrap justify-center mt-12 gap-y-5 md:-mx-5">
+			<div class="w-full md:w-1/2 xl:w-1/3 px-2">
+			<div class="flex flex-col w-full h-full bg-0GHAh8y8-testimonial-background p-8 shadow-main rounded-main" data-aos="fade-up" data-aos-delay="150">
+				<div>
+					<svg class="h-10 w-10 mb-2 text-header text-0GHAh8y8-header opacity-25" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+						<path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path>
+					</svg>
+				</div>
+
+				<div class="flex-1 mb-6 text-header text-0GHAh8y8-header">
+					<p>Spreadsheets super helpful, purchased my first product of 25 units. Amazing support from @TMG too.</p>
+				</div>
+
+				<div class="flex items-center">
+					<div class="mr-3">
+						<img src="https://cookgroup.tools/storage/placeholders/partner-logo.png" class="w-full max-h-10" />
+					</div>
+					<div>
+						<p class="text-sm mt-2 text-content text-0GHAh8y8-body">mad_245#3265</p>
+						<p class="text-sm text-content text-0GHAh8y8-body">Black Card</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div class="w-full md:w-1/2 xl:w-1/3 px-2">
+			<div class="flex flex-col w-full h-full bg-0GHAh8y8-testimonial-background p-8 shadow-main rounded-main" data-aos="fade-up" data-aos-delay="250">
+				<div>
+					<svg class="h-10 w-10 mb-2 text-header text-0GHAh8y8-header opacity-25" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+						<path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path>
+					</svg>
+				</div>
+
+				<div class="flex-1 mb-6 text-header text-0GHAh8y8-header">
+					<p>Have had a great experience with the magnate group so far, really helpful with finding leads for my fba account, I was struggling to grow it due to not having enough time to find items myself but with them doing it all for me it really helped me get back on track. I’m now working with them on getting ungated as well, looking forward to continuing with the black card and seeing where it takes me.</p>
+				</div>
+
+				<div class="flex items-center">
+					<div class="mr-3">
+						<img src="https://cookgroup.tools/storage/placeholders/partner-logo.png" class="w-full max-h-10" />
+					</div>
+					<div>
+						<p class="text-sm mt-2 text-content text-0GHAh8y8-body">BigO793#1308</p>
+						<p class="text-sm text-content text-0GHAh8y8-body">Black Card</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div class="w-full md:w-1/2 xl:w-1/3 px-2">
+			<div class="flex flex-col w-full h-full bg-0GHAh8y8-testimonial-background p-8 shadow-main rounded-main" data-aos="fade-up" data-aos-delay="350">
+				<div>
+					<svg class="h-10 w-10 mb-2 text-header text-0GHAh8y8-header opacity-25" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+						<path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path>
+					</svg>
+				</div>
+
+				<div class="flex-1 mb-6 text-header text-0GHAh8y8-header">
+					<p>Yessir,</p><p>Those sharpies were such a movie.</p><p>&nbsp;</p><p>Couldn't have done it with out you guys.</p><p>&nbsp;</p><p>Hit my first $700 in sales can't wait to flex my first $1k<br>&nbsp;</p>
+				</div>
+
+				<div class="flex items-center">
+					<div class="mr-3">
+						<img src="https://cookgroup.tools/storage/placeholders/partner-logo.png" class="w-full max-h-10" />
+					</div>
+					<div>
+						<p class="text-sm mt-2 text-content text-0GHAh8y8-body">geoffrey#4789</p>
+						<p class="text-sm text-content text-0GHAh8y8-body">Black Card</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+            </div>
+            </section>
+
+                    <section id="pricing-1" class="relative py-20  px-4 md:px-8   overflow-hidden">
+        
+        <div class="pointer-events-none absolute z-[-1] inset-0  bg-body  "></div>
+
+                                                        <div class="max-w-6xl mx-auto">
+                        <div class="relative max-w-5xl text-center mx-auto mb-12">
+        <h3 class="text-6xl font-bold font-title text-header text-NQxWQzGxcMcycpDmlBEh-header" data-aos="fade-up" data-aos-delay="50">Become A Magnate Today</h3>    <div class=" mx-auto  max-w-md mt-6 text-lg text-content text-NQxWQzGxcMcycpDmlBEh-body md:max-w-3xl" data-aos="fade-up" data-aos-delay="100"><p>Start your e-commerce business with the right foundation - a network to rely on.</p></div></div>                    </div>
+                
+                <div class="max-w-6xl mx-auto">
+                    <div class="relative flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-center" data-aos="fade-up" data-aos-delay="150">
+    <div class="grid w-full grid-col-1 gap-y-4 md:grid-cols-3 md:gap-y-0">
+        <div class="flex flex-col flex-grow ">
+    <div class="overflow-hidden rounded-main shadow-main">
+        <div class="flex flex-col items-center p-10 bg-[#243043]">
+            <span class="font-semibold text-primary-300">Magnate Access</span>
+            <div class="flex items-center text-primary">
+                <span class="text-3xl">£</span>
+                <span class="text-5xl font-bold">30</span>
+            </div>
+            <span class="text-sm text-primary-100">per month</span>
+        </div>
+        <div class="bg-[#1e293b]">
+            <div class="p-10">
+                <ul>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Retail Monitors</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Lowkey Flips</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Crypto and NFT flips</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">24/7 support</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Trial the Black Card</span>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="flex px-10 pb-10 justfy-center">
+                <a href="https://hpr.co/UjCooAo8hDKjAx2tX9E39" class="flex items-center justify-center w-full h-12 px-6 text-sm uppercase transition-colors duration-200 rounded-lg bg-primary text-primary-button-text hover:bg-primary-600">
+                    <span>Sign Up</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>        <div class="flex flex-col flex-grow md:scale-110">
+    <div class="overflow-hidden rounded-main shadow-main">
+        <div class="flex flex-col items-center p-10 bg-[#243043]">
+            <span class="font-semibold text-primary-300">Magnate Black Card</span>
+            <div class="flex items-center text-primary">
+                <span class="text-3xl">£</span>
+                <span class="text-5xl font-bold">100</span>
+            </div>
+            <span class="text-sm text-primary-100">per month</span>
+        </div>
+        <div class="bg-[#1e293b]">
+            <div class="p-10">
+                <ul>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">All Previous Features</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">One to One mentor</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">FBA Leads Sheet</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">12 Virtual Assistants</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Network Events</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Wholesale &amp; Retail Arbitrage</span>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="flex px-10 pb-10 justfy-center">
+                <a href="https://hpr.co/4y-byGifuProEF0lMjSDG" class="flex items-center justify-center w-full h-12 px-6 text-sm uppercase transition-colors duration-200 rounded-lg bg-primary text-primary-button-text hover:bg-primary-600">
+                    <span>Sign Up</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>        <div class="flex flex-col flex-grow ">
+    <div class="overflow-hidden rounded-main shadow-main">
+        <div class="flex flex-col items-center p-10 bg-[#243043]">
+            <span class="font-semibold text-primary-300">Magnate Professional</span>
+            <div class="flex items-center text-primary">
+                <span class="text-3xl">£</span>
+                <span class="text-5xl font-bold">200</span>
+            </div>
+            <span class="text-sm text-primary-100">per month</span>
+        </div>
+        <div class="bg-[#1e293b]">
+            <div class="p-10">
+                <ul>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">All Previous Features</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Private Label Development</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">Private Label Distribution</span>
+                        </li>
+                                            <li class="flex">
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-2 text-sm text-[#F1F1F1]">One to One calls </span>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="flex px-10 pb-10 justfy-center">
+                <a href="https://hpr.co/KdT2xin8FuoAj5MT9BCsY" class="flex items-center justify-center w-full h-12 px-6 text-sm uppercase transition-colors duration-200 rounded-lg bg-primary text-primary-button-text hover:bg-primary-600">
+                    <span>SIGN UP</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>                </div>
+                        </section>
+
+                    <section id="stats-2" class="relative py-20  px-4 md:px-8   overflow-hidden">
+        
+        <div class="pointer-events-none absolute z-[-1] inset-0  bg-HkWc46rD-section-background  "></div>
+
+                                                        <div class="max-w-6xl mx-auto">
+                        <div class="relative max-w-5xl text-center mx-auto mb-12">
+        <h3 class="text-6xl font-bold font-title text-header text-HkWc46rD-header" data-aos="fade-up" data-aos-delay="50">Celebrate Your Success With US</h3>    <div class=" mx-auto  max-w-md mt-6 text-lg text-content text-HkWc46rD-body md:max-w-3xl" data-aos="fade-up" data-aos-delay="100"><p>We win together... It does not have to be lonely at the top...</p></div></div>                    </div>
+                
+                <div class="max-w-6xl mx-auto">
+                    <div class="max-w-4xl mx-auto">
+	<div class="grid grid-cols-1 gap-8 mt-8 md:gap-12 md:grid-cols-3">
+					<div class="flex flex-col items-center text-center md:text-left md:block" data-aos="fade-up" data-aos-delay="150">
+                <div class="w-1/2 h-2 mb-6 rounded-full bg-primary"></div>
+				<p class="text-6xl font-bold font-title text-header">£2.5 Million </p>
+				<p class="max-w-xs mt-2 text-lg text-content md:max-w-none">In sales alone amongst our professional sellers</p>
+			</div>
+					<div class="flex flex-col items-center text-center md:text-left md:block" data-aos="fade-up" data-aos-delay="250">
+                <div class="w-1/2 h-2 mb-6 rounded-full bg-primary"></div>
+				<p class="text-6xl font-bold font-title text-header">92%</p>
+				<p class="max-w-xs mt-2 text-lg text-content md:max-w-none">of leads were purchased and profited from within the first month of joining</p>
+			</div>
+					<div class="flex flex-col items-center text-center md:text-left md:block" data-aos="fade-up" data-aos-delay="350">
+                <div class="w-1/2 h-2 mb-6 rounded-full bg-primary"></div>
+				<p class="text-6xl font-bold font-title text-header">100%</p>
+				<p class="max-w-xs mt-2 text-lg text-content md:max-w-none">is the amount of effort we put in to making you succeed. If you do not make a profit within the first month we will offer a refund.</p>
+			</div>
+			</div>
+</div>
+                </div>
+                        </section>
+
+                    <footer class="px-4  py-8  bg-iViUV74kJHqqo7jXnERH-background md:px-8">
+	<div class="max-w-6xl mx-auto">
+		<div
+			class="flex justify-between space-y-4 md:items-end"
+		>
+			<div>
+				<img
+					class="max-h-8 w-auto mb-4"
+					src="https://cookgroup.tools/storage/placeholders/logo.png"
+				/>
+
+									<p class="text-xs text-iViUV74kJHqqo7jXnERH-link">© 2022 <span>TMG CO</span></p>
+											</div>
+
+            <div>
+									<div class="flex mb-4 space-x-2 md:justify-end">
+													<a href="https://twitter.com/themagnategroupxyz" class="text-iViUV74kJHqqo7jXnERH-link" target="_blank">
+								<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+								</svg>
+							</a>
+						
+											</div>
+				
+				<div class="flex flex-col md:flex-row md:space-x-4">
+									</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+            </main>
+    
+    <script>
+		AOS.init({
+            once: true
+        });
+    </script>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
