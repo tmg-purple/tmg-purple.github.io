@@ -29,7 +29,8 @@ html {
 
 /**
 1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
+
+. Prevent adjustments of font size after orientation changes in iOS.
 */
 
 html {
@@ -567,6 +568,7 @@ object {
   /* 1 */
   vertical-align: middle;
   /* 2 */
+	color: #A855f7;
 }
 
 /**
